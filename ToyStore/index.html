@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="svgs/favicon.svg" type="image/x-icon">
+    <title>OmOchaa!!</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Rajdhani:wght@300&family=Raleway:wght@300&family=Tilt+Prism&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <button class="explore-btn" onclick="expoClick()">Explore</button>
+    <div class="text-container" ></div>
+    <div class="text-wrapper" id="t-wrapper">
+        <div class="text">OmOcha!! OmOcha!! OmOcha!! OmOcha!! OmOcha!!</div>
+        <div class="text">OmOcha!! OmOcha!! OmOcha!! OmOcha!! OmOcha!!</div>
+        <div class="text">OmOcha!! OmOcha!! OmOcha!! OmOcha!! OmOcha!!</div>
+        <div class="text">OmOcha!! OmOcha!! OmOcha!! OmOcha!! OmOcha!!</div>
+        <div class="text">OmOcha!! OmOcha!! OmOcha!! OmOcha!! OmOcha!!</div>
+        <div class="text">OmOcha!! OmOcha!! OmOcha!! OmOcha!! OmOcha!!</div>
+        <div class="text">OmOcha!! OmOcha!! OmOcha!! OmOcha!! OmOcha!!</div>
+        <div class="text">OmOcha!! OmOcha!! OmOcha!! OmOcha!! OmOcha!!</div>
+        <div class="text">OmOcha!! OmOcha!! OmOcha!! OmOcha!! OmOcha!!</div>
+        <div class="text">OmOcha!! OmOcha!! OmOcha!! OmOcha!! OmOcha!!</div>
+        <div class="text">OmOcha!! OmOcha!! OmOcha!! OmOcha!! OmOcha!!</div>
+        <div class="text">OmOcha!! OmOcha!! OmOcha!! OmOcha!! OmOcha!!</div>
+        <div class="text">OmOcha!! OmOcha!! OmOcha!! OmOcha!! OmOcha!!</div> 
+        <div class="text">OmOcha!! OmOcha!! OmOcha!! OmOcha!! OmOcha!!</div> 
+        <div class="text">OmOcha!! OmOcha!! OmOcha!! OmOcha!! OmOcha!!</div> 
+        <div class="text">OmOcha!! OmOcha!! OmOcha!! OmOcha!! OmOcha!!</div> 
+        <div class="text">OmOcha!! OmOcha!! OmOcha!! OmOcha!! OmOcha!!</div> 
+        <div class="text">OmOcha!! OmOcha!! OmOcha!! OmOcha!! OmOcha!!</div> 
+        <div class="text">OmOcha!! OmOcha!! OmOcha!! OmOcha!! OmOcha!!</div> 
+        <div class="text">OmOcha!! OmOcha!! OmOcha!! OmOcha!! OmOcha!!</div> 
+        <div class="text">OmOcha!! OmOcha!! OmOcha!! OmOcha!! OmOcha!!</div> 
+        <div class="text">OmOcha!! OmOcha!! OmOcha!! OmOcha!! OmOcha!!</div> 
+
+    </div>
+    <div class="header">
+      <div class="brand-name" ><h1>OmOchaa!!</h1></div>
+      <div class="option-wrapper">
+
+          <div class="item-product">
+            <div class="option" id="Products"  onclick="openProduct()"><h1>Toys</h1>
+            <span class="triangle"></span>
+            <span class="square"></span>
+            <span class="triangle2"></span></div>
+          </div>
+
+            <div class="item-links" onclick="OpenCustom()">
+            <div class="option" id="About">
+              <img src="svgs/logo.svg" alt="" srcset="" style="width: 100px;">
+              <h2>Custom Make Your Own Toy</h2>
+            </div>
+            <div class="option" id="Contact" onclick="OpenContact()">
+              <marquee direction="left">Lets Talk ! Write us a Mail Lets Talk !</marquee><h2>Contact Us</h2></div>
+            </div>
+      </div>
+      
+    </div>
+    
+   </div> 
+  
+
+
+
+   <script>
+    const btn = document.querySelector(".explore-btn");
+    const texts = document.getElementById("t-wrapper");
+
+    btn.addEventListener("click", function () {
+      gsap.to(".explore-btn", 1, {
+        opacity: 0,
+        y: -40,
+        ease: Expo.easeInOut,
+      });
+
+      gsap.to(".text-wrapper > div", 1, {
+        x: "500",
+        ease: Expo.easeInOut,
+        delay: 1,
+        stagger: 0.1,
+      });
+
+      gsap.to(".text-wrapper", 3, {
+        y: -600,
+        scale: 4.5,
+        rotate: -90,
+        ease: Expo.easeInOut,
+        delay: 1.5,
+      });
+
+      gsap.to(".text", 1, {
+        opacity: 1,
+        ease: Expo.easeInOut,
+        delay: 3,
+      });
+
+      gsap.to(".text-wrapper > div", 4, {
+        x: "-3500",
+        ease: Expo.easeInOut,
+        delay: 3.5,
+        stagger: 0.05,
+      });
+
+      gsap.to(".text-container", 2, {
+        bottom: "-100%",
+        ease: Expo.easeInOut,
+        delay: 6,
+      });
+
+      // let textWrapper = document.querySelector(".header");
+      // textWrapper.innerHTML = textWrapper.textContent.replace(
+      //   /\S/g,
+      //   "<span class='letter'>$&</span>"
+      // );
+
+      anime.timeline().add({
+        targets: ".brand-name",
+        opacity: [0, 1],
+        translateY: [200, 0],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 2000,
+        delay: (el, i) => 5600 + 40 * i,
+        
+      });
+
+      
+       
+    });
+    
+    function expoClick(){
+      setTimeout(function(){
+      texts.style.display="none";
+
+    }, 9500); 
+    }
+    
+    function expoClick(){
+      setTimeout(function(){
+      window.open("home.html","_self")
+    }, 7800); 
+    }
+    function OpenContact(){
+      window.open("contact.html","_self");
+    }
+    function openProduct(){
+      window.open("Product-page.html","_self");
+    }
+    function OpenCustom(){
+      window.open("custom.html","_self");
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: canopee;
+  src: url(Fonts/font/Canopee/Canopee.otf);
+}
+
+@font-face {
+  font-family: Monument;
+  src: url(Fonts/font/Monument-Extended/MonumentExtended-Regular.otf);
+}
+
+@font-face {
+  font-family: Monopop;
+  src: url(Fonts/font/Monopop/Monopop-Oblique.otf);
+}
+
+@font-face {
+  font-family: bern;
+  src: url(Fonts/font/Bern/Bern.otf);
+}
+
+@font-face {
+  font-family: Stadiona;
+  src: url(Fonts/font/Stadiona/Stadiona-Shadow.otf);
+}
+
+@font-face {
+  font-family: Space-Grotesk;
+  src: url(Fonts/font/Space-Grotesk/SpaceGrotesk-Light.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+}
+
+body,html{
+  background-color:rgb(255, 68, 162);
+  width: 100vw;
+  height: 100vh;
+
+ 
+}
+body::-webkit-scrollbar{ width: 0; }
+body {
+  scrollbar-width: none; /* For Firefox */
+}
+
+
+
+header {
+  width: 100%;
+  height: 15vh;
+  background-color: white;
+  border-bottom: 2px solid white;
+}
+
+#nav-top {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 68, 162);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav-top h1 {
+  font-family: canopee;
+  color: #fff;
+  font-size: 500%;
+  margin-left: 2.5%;
+}
+
+#nav-top img {
+  width: 12%;
+}
+
+.top-text {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+}
+
+.top-text h1 {
+  font-family: Monument;
+  font-size: 350%;
+  color: #fff;
+}
+
+.top-text p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #fff;
+  padding: 5px;
+}
+
+
+.questions{
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  text-transform: uppercase;
+
+
+}
+
+.questions label{
+  font-family: Monument;
+}
+.ques-1{
+  width: 50%;
+  height: 100%;
+  padding: 5%;
+}
+.ques-1 label{
+  font-size: 30px;
+  
+}
+.ques-1 input{
+  background-color: none;
+  padding: 0.4em;
+  border: none;
+  border-bottom: 1px solid #747474;
+  background: none;
+  outline: none;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 80%;
+  font-size: 24px;
+  color: #fff;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+
+}
+
+.ques-2{
+  width: 50%;
+  height: 100%;
+  padding : 5%;
+}
+
+.ques-2 label{
+  font-size: 30px;
+  
+}
+.ques-2 input{
+  background-color: none;
+  padding: 0.4em;
+  border: none;
+  border-bottom: 1px solid #747474;
+  background: none;
+  outline: none;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 80%;
+  font-size: 24px;
+  color: #fff;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+
+}
+
+.ques-2 textarea{
+  width: 100%;
+  background: none;
+  background:none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #747474;
+  font-size: 24px;
+  color: #fff;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+
+}
+
+#submit{
+  background-color: rgb(255, 68, 162);
+  color: white;
+  font-size: 20px;
+  font-family: Monument;
+}
+
+@media only screen  and (max-width:800px) {
+    
+  #nav-top h1 {
+    font-family: canopee;
+    color: #fff;
+    font-size: 300%;
+    margin-left: 2.5%;
+  }
+  
+  #nav-top img {
+    width: 20%;
+  }
+  
+  
+  
+  
+  .top-text{
+      height: 30vh;
+    }
+  .top-text h1 {
+    font-family: Monument;
+    font-size: 150%;
+    color: #fff;
+    margin-bottom: 5%;
+  }
+  .top-text p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: #fff;
+    padding: 5%;
+  
+  }
+  
+  
+  .questions{
+      display: flex;
+      flex-direction: column;
+    }
+    .ques-1 {
+      width: 100vw;
+    }
+    .ques-1 label{
+      font-size: 20px;
+      
+    }
+    .ques-2{
+      width: 100vw;
+    }
+}

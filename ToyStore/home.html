@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmOchaa!!</title>
+    <link rel="stylesheet" href="home.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Rajdhani:wght@300&family=Raleway:wght@300&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="svgs/favicon.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <div class="brand-name" ><h1>OmOchaa!!</h1></div>
+        <div class="option-wrapper">
+  
+            <div class="item-product">
+              <div class="option" id="Products"  onclick="openProduct()"><h1>Toys</h1>
+              <span class="triangle"></span>
+              <span class="square"></span>
+              <span class="triangle2"></span></div>
+            </div>
+  
+              <div class="item-links">
+              <div class="option" id="About" onclick="OpenCustom()">
+                <img src="svgs/logo.svg" alt="" srcset="" style="width: 100px;">
+                <h2>Custom Make Your Own Toy</h2>
+              </div>
+              <div class="option" id="Contact" onclick="OpenContact()">
+                <marquee direction="left">Lets Talk ! Write us a Mail Lets Talk !</marquee><h2>Contact Us</h2></div>
+              </div>
+        </div>
+        
+      </div>
+
+
+      <script>
+     
+    function OpenContact(){
+      window.open("contact.html","_self");
+    }
+    function openProduct(){
+      window.open("Product-page.html","_self");
+    }
+    function OpenCustom(){
+      window.open("custom.html","_self");
+    }
+
+      </script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="svgs/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="product.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/6.1.3/esm/ionicons.min.js" integrity="sha512-J4LkJr/AeK/KXjqkfb/65C4jzT4gG7BDqH9OtiOzCmULhWdKGppS3dCCzo0bmFULnZkajr4esopJYYLOLzuznw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+
+
+    <title>OmOchaa!!-Toys</title>
+</head>
+<body style="overflow: scroll;  overflow-x:hidden;">
+
+    <header>  
+        <nav id="nav-top">
+            <h1>OmOchaa!!</h1>
+            <img src="svgs/logo-contact.svg" alt="">
+        </nav>
+        <nav id="nav-bottom" >
+            <img src="svgs/magni.svg" alt="">
+            <img src="svgs/mycart.svg" alt="">
+            <span class="qunatity" id="count">0</span>
+            <img src="svgs/wish.svg" alt="">
+            <span class="qunatity" id="count2">0</span>
+            
+        </nav>
+    </header>
+    <div id="overlay">
+        <nav>
+            <button id="back-to-main" onclick="shrinkOverlay()"><ion-icon name="arrow-back-outline"></ion-icon></button>
+        </nav>
+        <div class="main">
+            <div class="sub-main"  id="left">
+                <img src="Images/dino.jpeg" alt="" id="img-main">
+            </div>
+            <div class="sub-main" id="right">
+                <div class="content">
+                <h1 id="title">THE GOOD DINO</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia laudantium a ipsa consequatur, necessitatibus commodi Lorem ipsum dolor sit amet.</p></div>
+                <label for="size">Size: </label><br>
+                <input type="button" value="0.5ft"><input type="button" value="1ft"><input type="button" value="1.5ft"> <input type="button" value="2ft"><input type="button" value="3ft">
+                <br>
+                <button class="buy">ADD TO BAG</button>
+                
+               
+
+              
+
+            </div>
+        </div>
+     </div>
+
+
+    <div id="heading" >
+        TOYS  → 
+    </div>
+  
+    <section class="product-container" id="product-container">
+            
+ 
+     
+             <a href="#overlay"><div class="card"  onclick="expandOverlay()" onclick="dino()" >
+                <img src="Images/dino.jpeg" alt="">
+                <h1>THE GOOD DINO </h1>
+                <button class="btn"><span><b>ADD TO BAG</b></span><span class="Price"><b>₹4000</b></span></button>
+                
+            </div></a>
+
+            <a href="#overlay"> <div class="card" onclick="expandOverlay()" onclick="egg()">
+                <img src="Images/egg.jpeg" alt="" >
+                <h1>BOILED EGGY </h1>                                 
+                <button class="btn"  ><span><b>ADD TO BAG</b></span><span class="Price"><b>₹5300</b></span></button>
+                
+            </div></a>
+
+
+            <a href="#overlay"> <div class="card"  onclick="expandOverlay()" onclick="bat()">
+                <img src="Images/Jellycat.jpeg" alt="">
+                <h1>CORONA </h1>
+                <button class="btn" ><span><b>ADD TO BAG</b></span><span class="Price"><b>₹6000</b></span></button>
+                
+            </div></a>
+
+            <a href="#overlay"> <div class="card" onclick="expandOverlay()" onclick="roll()">
+                <img src="Images/jellycat amuseables.jpeg" alt="">
+                <h1>CINNAMON </h1>
+                <button class="btn" ><span><b>ADD TO BAG</b></span><span class="Price"><b>₹2000</b></span></button>
+                
+            </div></a>
+
+
+            <a href="#overlay"> <div class="card" onclick="expandOverlay()" onclick="duck()">
+                <img src="Images/Duckorange.jpeg" alt="">
+                <h1>FIRE DUCK </h1>
+                <button class="btn"  ><span><b>ADD TO BAG</b></span><span class="Price"><b>₹5200</b></span></button>
+                
+            </div></a>
+
+
+            <a href="#overlay">  <div class="card" onclick="expandOverlay()" ondblclick="cow()">
+                <img src="Images/Play Stuffed Animals.png" alt="">
+                <h1>MOO MOO </h1>
+                <button class="btn"  ><span><b>ADD TO BAG</b></span><span class="Price"><b>₹1800</b></span></button>
+                
+            </div></a>
+
+
+            <a href="#overlay"> <div class="card" onclick="expandOverlay()" ondblclick="rabbit()">
+                <img src="Images/rabbit.jpeg" alt="">
+                <h1>REXY RABBIT </h1>
+                <button class="btn"  ><span><b>ADD TO BAG</b></span><span class="Price"><b>₹2300</b></span></button>
+                
+            </div></a>
+
+
+            <a href="#overlay"> <div class="card" onclick="expandOverlay()" ondblclick="ducky()">
+                <img src="Images/Jellycat_com.png" alt="">
+                <h1>QUACKER ME </h1>
+                <button class="btn"  ><span><b>ADD TO BAG</b></span><span class="Price"><b>₹6000</b></span></button>
+                
+            </div></a>
+
+
+            <a href="#overlay"><div class="card"  onclick="expandOverlay()">
+                <img src="Images/Search Results.jpeg" alt="">
+                <h1>PIG W' BREAD </h1>
+                <button class="btn" ><span><b>ADD TO BAG</b></span><span class="Price"><b>₹4300</b></span></button>
+                
+            </div></a>
+
+            <a href="#overlay"> <div class="card"  onclick="expandOverlay()" ondblclick="problem()">
+                <img src="Images/I have problems.jpeg" alt="">
+                <h1>I HAVE PROBLEMS </h1>
+                <button class="btn" ><span><b>ADD TO BAG</b></span><span class="Price"><b>₹2700</b></span></button>
+                
+            </div></a>
+
+            <a href="#overlay"> <div class="card" onclick="expandOverlay()" onclick="penguin()">
+                <img src="Images/penguin-small.jpeg" alt="">
+                <h1>COOL KING </h1>
+                <button class="btn "  ><span><b>ADD TO BAG</b></span><span class="Price"><b>₹4230</b></span></button>
+                
+            </div>    </a>  
+
+            <a href="#overlay"> <div class="card "  onclick="expandOverlay()" onclick="kill()" >
+                <img src="Images/jpeg(1)" alt="">
+                <h1>IMMA KILL </h1>
+                <button class="btn" ><span><b>ADD TO BAG</b></span><span class="Price"><b>₹8000</b></span></button>
+                
+            </div></a>
+
+                                                                                                                                                                    
+        
+    </section>
+    <footer>
+        <div class="footer-top">
+            <h1>DOWN FOR MORE ? WE GOT YOU .</h1>
+            <h3>All the latest product drops, limited offers, in-store event info-straight to your inbox. </h3>
+            
+        </div>
+
+       
+       
+       
+        <label for="Email" style="display: flex;">
+            <input type="email" name="" id="email" placeholder="E M A I L" > <button>GO!<ion-icon name="arrow-forward-outline"></ion-icon></button>
+           <input type="tel" name="" id="phone_no" placeholder="P H O N E"><button>GO! <ion-icon name="arrow-forward-outline"></ion-icon></button>
+        </label>
+        
+        
+    
+       
+       
+              <div class="footer-bottom">
+            <div class="footer-left">
+        
+
+            <h3 > © 2023 Kendo Holdings. All Rights Reserved. </h3>
+        </div>
+            <div class="footer-right"> 
+                
+                <div class="banner">
+                    <h1>OmOchaa!!  </h1>
+                    <ion-icon name="logo-instagram" ></ion-icon>
+                    <ion-icon name="logo-twitch"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-youtube"></ion-icon>
+                    
+                  
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <script>
+
+
+        
+const overlay = document.getElementById('overlay')
+const cards = document.getElementById('product-container')
+const headings = document.getElementById('heading')
+function expandOverlay(){
+    overlay.style.display = 'block';
+    cards.style.display="none";
+    headings.style.display="none";
+}
+
+function shrinkOverlay(){
+    overlay.style.display = 'none';
+    cards.style.display="flex";
+    headings.style.display="block"
+}
+
+function dino(){
+    var imgs = getElementById('img-main')
+    imgs.src='Images/dino.jpeg';
+}
+function egg(){
+    var imgs = getElementById('img-main')
+    imgs.src='Images/egg.jpeg';
+    document.getElementById('title').innerHTML = 'BOILED EGGY';
+    
+}
+
+
+
+
+    </script>
+</body>
+</html>     
